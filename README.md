@@ -24,12 +24,14 @@ be found at [https://hexdocs.pm/project1](https://hexdocs.pm/project1).
 Bitcoins are the most popular crypto-currency in common use. At their heart, bitcoins use the hardness of cryptographic hashing (SHA-256) to ensure a limited “supply” of coins. 
 The goal of this first project is to use Elixir and the actor model to build a good solution to this problem that runs well on multi-core machines. 
 In this project, I implemented a server which has a miner and a listener module. The miner module keeps mining for bitcoins while the listener module waits to see if any other workers (hosts) make their presence available. If available, the server assigns the worker to start mining by providing it with a random seed value to begin mining from. Once the worker finds bitcoins, it notifies the server which subsequently prints the bitcoin as output.
+
 •	Size of the work unit that results in best performance 
-The server assigns each worker with a new random seed appended with a counter. 
+
+	The server assigns each worker with a new random seed appended with a counter. 
 	This counter ticks from 0 to infinity and prevents any of the workers from having a 
 	collision with any one else by mining the same bitcoins. In this way the entire space of minable
-   coins are covered. In this scheme, each worker can proceed upto a limit of 2^32 work units in
-   total.
+  	coins are covered. In this scheme, each worker can proceed upto a limit of 2^32 work units in
+  	total.
 •	Result of running the program for ./project1 4
 
 	vgoyalICCFCUYE2800      	000088906B627E733CDCA836019C97B6B36B13A843A069BF567CEF9376EA857E
