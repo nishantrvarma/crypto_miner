@@ -1,6 +1,5 @@
-# PROJECT1
+# Crypto Miner
 
-**TODO: Add description**
 
 ## Installation
 
@@ -21,13 +20,10 @@ be found at [https://hexdocs.pm/project1](https://hexdocs.pm/project1).
 
 
 
-Project 1
-Vivek Goyal UFID : 8388-6402
-Nishant Varma UFID : 8593-9695
 
 Bitcoins are the most popular crypto-currency in common use. At their heart, bitcoins use the hardness of cryptographic hashing (SHA-256) to ensure a limited “supply” of coins. 
 The goal of this first project is to use Elixir and the actor model to build a good solution to this problem that runs well on multi-core machines. 
-In our project, we implemented a server which has a miner and a listener module. The miner module keeps mining for bitcoins while the listener module waits to see if any other workers (hosts) make their presence available. If available, the server assigns the worker to start mining by providing it with a random seed value to begin mining from. Once the worker finds bitcoins, it notifies the server which subsequently prints the bitcoin as output.
+In this project, I implemented a server which has a miner and a listener module. The miner module keeps mining for bitcoins while the listener module waits to see if any other workers (hosts) make their presence available. If available, the server assigns the worker to start mining by providing it with a random seed value to begin mining from. Once the worker finds bitcoins, it notifies the server which subsequently prints the bitcoin as output.
 •	Size of the work unit that results in best performance 
 The server assigns each worker with a new random seed appended with a counter. 
 	This counter ticks from 0 to infinity and prevents any of the workers from having a 
@@ -36,7 +32,7 @@ The server assigns each worker with a new random seed appended with a counter.
    total.
 •	Result of running the program for ./project1 4
 
-vgoyalICCFCUYE2800      Hash:000088906B627E733CDCA836019C97B6B36B13A843A069BF567CEF9376EA857E
+	vgoyalICCFCUYE2800      	000088906B627E733CDCA836019C97B6B36B13A843A069BF567CEF9376EA857E
 	vgoyalZHWAJQMT2016      	0000DA312CE0CF9D879A47DB4E09B4A18C11957E243C8B0CBDB61D36969C3DAC
 	vgoyalICCFCUYE11640     	000015EFABA3F84A795FA33A5337D39F166FB3504C94B76D06CB4AAB0585BBDE
 	vgoyalZHWAJQMT13488     	0000836C5F9333CFCCD4F0F4AC06B8DADDCA69DA6134732BE3A636917D11BFC4
@@ -58,9 +54,9 @@ On running time ./project1 5, the ratio of CPU time to Real time obtained was ob
 
 •	  Coin with the most 0s
 
-	The coin with most zeroes that we mined had 7 zeroes. 
+	The coin with most zeroes that was mined had 7 zeroes. 
 	Coin : vgoyalCLCITLN29268264	Hash:000000059D20F6D6522140277649106A990C771C80775BE212C687B04048EEAB
-•	  Largest number of working machines able to run our code with	
+•	  Largest number of working machines able to run code with	
 
-	Our code was able to handle being run by 4 machines. It could be more but we could manage to
-   arrange 4 machines to run the code at once.
+	The code was able to handle being run by 4 machines. It could be more if we could manage to
+   	arrange 4 machines to run the code at once.
