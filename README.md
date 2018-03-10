@@ -52,7 +52,7 @@ In this project, I implemented a server which has a miner and a listener module.
 	vgoyalMEHGXLXI199887    	00005B4019C1BC9938A6D040B2E7524146E330486BF6A6E2D9E14E8EED73C943
 •	Running time on ./project1 5
 
-On running time ./project1 5, the ratio of CPU time to Real time obtained was observed as 3.2 . This can be seen as a 320% CPU utilization on a 4-core machine.  
+	On running time ./project1 5, the ratio of CPU time to Real time obtained was observed as 3.2 . This can be seen as a 320% CPU 	utilization on a 4-core machine.  
 
 •	  Coin with the most 0s
 
